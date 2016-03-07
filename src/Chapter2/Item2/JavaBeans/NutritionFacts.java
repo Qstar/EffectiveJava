@@ -19,6 +19,8 @@ public class NutritionFacts {
         cocaCola.setCalories(100);
         cocaCola.setSodium(35);
         cocaCola.setCarbohydrate(27);
+        cocaCola.setFat(50);
+        System.out.println(cocaCola);
     }
 
     // Setters
@@ -45,4 +47,5 @@ public class NutritionFacts {
     public void setCarbohydrate(int val){
         carbohydrate = val;
     }
+
 }

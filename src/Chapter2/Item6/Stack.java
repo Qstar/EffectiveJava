@@ -19,7 +19,10 @@ public class Stack {
     public Object pop(){
         if (size == 0)
             throw new EmptyStackException();
-        return elements[--size];
+        Object result = elements[--size];
+        //防止内存泄漏
+        elements[size] = null;//Eliminate obsolete reference
+        return result;
     }
 
     /**
